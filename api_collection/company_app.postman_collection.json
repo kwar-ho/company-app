@@ -1,0 +1,573 @@
+{
+	"variables": [],
+	"info": {
+		"name": "company_app",
+		"_postman_id": "d8103a66-91ca-aa2b-a8dd-fa31c21716d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "department list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/departments/list",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "department add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/departments/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dept_name",
+							"value": "Software",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "department edit",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/departments/edit",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dept_id",
+							"value": "7",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "department update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/departments/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dept_id",
+							"value": "9",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "dept_name",
+							"value": "Software",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "department delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/departments/delete",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dept_id",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "employees list",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/employees/list",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sort_by",
+							"value": "first_name",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sort_order",
+							"value": "asc",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "search_by",
+							"value": "first_name",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "search_value",
+							"value": "test",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "employee add",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/employees/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Employee",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2020-10-29",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "office_email",
+							"value": "test@gmail.comn",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "primary_mobile",
+							"value": "341234561234",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address",
+							"value": "just address",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_state",
+							"value": "Maharshtra",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_city",
+							"value": "mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_zipcode",
+							"value": "400001",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "personal_email",
+							"value": "testpersonal@gmail.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "employees edit",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/Employees/edit/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "employee update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/employees/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Keshavw",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Warang",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "M",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": "2020-10-16",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "office_email",
+							"value": "keshav@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "primary_mobile",
+							"value": "89671234567",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address",
+							"value": "test address",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_state",
+							"value": "Maharshtra",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_city",
+							"value": "mumbai",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "current_address_zipcode",
+							"value": "400001",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "emp_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "personal_email",
+							"value": "keshavpersonal@gmail.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "employee delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "demo_api_user",
+						"password": "Yib6PWi6ygTq",
+						"saveHelperData": true,
+						"showPassword": false
+					}
+				},
+				"url": "http://localhost/aertrip_assignment/index.php/api/employees/delete",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGVtb19hcGlfdXNlcjpZaWI2UFdpNnlnVHE=",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "113xJ5851O01kyCZ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "q",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
